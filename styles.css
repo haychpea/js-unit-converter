@@ -13,6 +13,11 @@ body {
     justify-content: center;
 }
 
+.center-text{
+    text-align: center;
+    margin: 0;
+}
+
 #main{
     margin-top: 100px;
     background-color: aquamarine;
@@ -22,8 +27,32 @@ body {
     flex: 1;
     max-width: 400px;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#user-button {
+#ui{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    text-align: left;
     margin-top: 15px;
+}
+
+.column{
+    flex: 50%;
+    padding: 5px;
+}
+
+#user-box{
+    text-align: center;
+    margin-top: 15px
+}
+
+#user-button{
+    margin: 15px;
 }
