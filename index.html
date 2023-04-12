@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./app.js"></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Basic unit converter app</title>
 </head>
@@ -12,22 +11,42 @@
     <div id="main">
         <div id="ui">
             <div class="title">
-                <h2>Unit Converter</h1>
+                <h2 class="center-text">Unit Converter</h1>
             </div>
-            <div id="unit-start">
-
-            </div>
-            <div id="unit-end">
-
-            </div>
+            <div id="unit-selection">
+                <div class="row">
+                    <div class="column">
+                        <table id="unit-start">
+                            <h4 class="center-text">Starting Units</h4>
+                            <tr>
+                                <td><input id="chkMph" name="startUnits" type="radio" value="1"/><label for="chkMph">Miles Per Hour</label></td>
+                            </tr>
+                            <tr>
+                                <td><input id="chkKmh" name="startUnits" type="radio" value="1"/><label for="chkKmh">Kilometers Per Hour</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <table id="unit-end">
+                            <h4 class="center-text">Ending Units</h4>
+                            <tr>
+                                <td><input id="resMph" name="endUnits" type="radio" value="1"/><label for="resMph">Miles Per Hour</label></td>
+                            </tr>
+                            <tr>
+                                <td><input id="resKmh" name="endUnits" type="radio" value="1"/><label for="resKmh">Kilometers Per Hour</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             <div id="user-box">
-                <input>
+                <input type="text" id="userInput" size="20" style="text-align: center;" value="">
             </div>
-            <button id="user-button">Enter</button>
+            <button id="enter">Enter</button>
             <div id="results">
 
             </div>
         </div>
     </div>
 </body>
+<script src="./app.js"></script>
 </html>
